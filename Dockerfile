@@ -1,7 +1,4 @@
-FROM openjdk:11
+From tomcat:8-jre8 
 
-COPY target/example-0.0.1.jar /
-
-WORKDIR /
-
-CMD ["java", "-jar", "example-0.0.1.jar"]
+# copy war file on to container 
+COPY ./example-0.0.1-SNAPSHOT.jar /usr/local/tomcat/webapps

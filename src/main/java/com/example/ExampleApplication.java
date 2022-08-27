@@ -16,7 +16,7 @@ public class ExampleApplication {
 	}
 	@GetMapping("/exm")
 	public String example() {
-		return "welcome to india";
+		return "Welcome to GlobalLogic by Team-2";
 	}
 
 }
